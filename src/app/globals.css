@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-orbitron), sans-serif;
+  --font-body: var(--font-geist), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
+
+:root {
+  /* Font Family Tokens */
+  --font-display: var(--font-orbitron), sans-serif;
+  --font-body: var(--font-geist), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  /* Fluid Typography Variables (Wajib menggunakan clamp) */
+  --text-hero: clamp(2.75rem, 1.2rem + 7vw, 7.5rem);
+  --text-section: clamp(1.75rem, 1.2rem + 2.5vw, 3rem);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-label: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+
+  /* Fluid Spacing Variables */
+  --spacing-section: clamp(4rem, 8vw, 10rem);
+
+  /* Color Tokens */
+  --bg-deep: #05060f;
+  --bg-subtle: #0b0d1f;
+  --color-text: #e8e6f0;
+  --color-accent: #7dd3fc;
+  color-scheme: dark;
+}
+
+/* Utilitas Tipografi */
+@utility font-orbitron {
+  font-family: var(--font-orbitron), "Orbitron", sans-serif;
+}
+
+@utility font-display {
+  font-family: var(--font-orbitron), "Orbitron", sans-serif;
+}
+
+@utility font-body {
+  font-family: var(--font-geist), "Geist", sans-serif;
+}
+
+@utility font-mono {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron), "Orbitron", sans-serif !important;
+}
+
+.font-display {
+  font-family: var(--font-orbitron), "Orbitron", sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-geist), "Geist", sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+}
+
+.fluid-hero {
+  font-family: var(--font-orbitron), "Orbitron", sans-serif;
+  font-size: var(--text-hero);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+}
+
+.fluid-section-title {
+  font-family: var(--font-orbitron), "Orbitron", sans-serif;
+  font-size: var(--text-section);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+.fluid-body {
+  font-family: var(--font-geist), "Geist", sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.65;
+}
+
+.fluid-label {
+  font-family: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.fluid-section-gap {
+  gap: var(--spacing-section);
+}
+
+/* Pembatasan panjang baris untuk kenyamanan membaca di layar lebar (60-68ch) */
+.prose-reading {
+  max-width: 65ch;
+}
+
+/* Text wrap formatting */
+h1, h2, h3, .text-balance {
+  text-wrap: balance;
+}
+
+p, .text-pretty {
+  text-wrap: pretty;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(ellipse 90% 75% at 85% 90%, #0d122e 0%, #07091a 40%, #05060f 100%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hilangkan tap highlight biru default di layar sentuh */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Dukungan Safe Area untuk perangkat HP modern */
+.safe-bottom {
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
+}
+
+/* Dukungan preferensi prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
