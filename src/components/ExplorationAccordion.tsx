@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { ChevronDown, ArrowUpRight } from "lucide-react";
+import { ChevronDown, ArrowUpRight, ArrowRight } from "lucide-react";
 import { LearningItem } from "@/lib/content";
 
 interface ExplorationAccordionProps {
@@ -128,18 +129,28 @@ export default function ExplorationAccordion({ items }: ExplorationAccordionProp
                       ))}
                     </div>
 
-                    {/* Tombol Tautan Eksternal (jika ada) */}
+                    {/* Tombol Tautan (Internal: satu tab via Next.js Link; External: tab baru) */}
                     {item.link && (
                       <div className="pt-2">
-                        <a
-                          href={item.link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 rounded-lg border border-sky-400/30 bg-sky-400/10 px-3 py-1.5 font-body text-xs font-semibold text-sky-200 transition-all hover:bg-sky-400/20 hover:border-sky-400/60 hover:text-white group/link shadow-sm"
-                        >
-                          <span>{item.link.label}</span>
-                          <ArrowUpRight className="h-3.5 w-3.5 text-sky-300 transition-transform duration-150 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
-                        </a>
+                        {item.link.url.startsWith("http") ? (
+                          <a
+                            href={item.link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 rounded-lg border border-sky-400/30 bg-sky-400/10 px-3 py-1.5 font-body text-xs font-semibold text-sky-200 transition-all hover:bg-sky-400/20 hover:border-sky-400/60 hover:text-white group/link shadow-sm"
+                          >
+                            <span>{item.link.label}</span>
+                            <ArrowUpRight className="h-3.5 w-3.5 text-sky-300 transition-transform duration-150 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+                          </a>
+                        ) : (
+                          <Link
+                            href={item.link.url}
+                            className="inline-flex items-center gap-1.5 rounded-lg border border-sky-400/30 bg-sky-400/10 px-3 py-1.5 font-body text-xs font-semibold text-sky-200 transition-all hover:bg-sky-400/20 hover:border-sky-400/60 hover:text-white group/link shadow-sm"
+                          >
+                            <span>{item.link.label}</span>
+                            <ArrowRight className="h-3.5 w-3.5 text-sky-300 transition-transform duration-150 group-hover/link:translate-x-1" />
+                          </Link>
+                        )}
                       </div>
                     )}
                   </div>
