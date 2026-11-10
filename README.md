@@ -24,7 +24,7 @@ Personal portfolio dashboard of **Indra Wijaya** — Computer Engineering Techno
 - **⚡ Modern & Fast:** Powered by Next.js App Router and React 19 for optimal performance and SEO.
 - **🎨 Sleek Dark Aesthetic:** Polished dark-mode UI with fluid animations powered by Framer Motion and Tailwind CSS.
 - **📱 Fully Responsive:** Smoothly adapts across mobile, tablet, and desktop viewports.
-- **💼 Project & Initiative Showcase:** Highlights real-world works including **RuPa Cloud** and **Spatial Data Mining**.
+- **💼 Project & Initiative Showcase:** Highlights real-world works including **RuPa Cloud** and **Spatial Data Mining** (featuring an interactive Leaflet clustering map & 7-step tabular data inspector at `/data-processing`).
 
 ---
 

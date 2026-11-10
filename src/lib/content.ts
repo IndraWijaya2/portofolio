@@ -74,6 +74,10 @@ export const LEARNING_ITEMS: LearningItem[] = [
     summary:
       "Pengolahan dan analisis data spasial skala besar mencakup lebih dari 50.000 titik node jaringan jalan Kota Semarang. Mengimplementasikan pipeline data mining dari ekstraksi graf dengan OSMnx & GeoPandas, rekayasa fitur geometris & simpang jalan, normalisasi data, hingga klasterisasi K-Means dan pemetaan interaktif berbasis Folium/Leaflet.",
     badges: ["Python", "GeoPandas & OSMnx", "K-Means Clustering", "Data Preprocessing", "Folium / Leaflet"],
+    link: {
+      label: "Buka Dashboard Visualisasi & Tabel Data",
+      url: "/data-processing",
+    },
   },
 ];
 
