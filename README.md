@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Indra Wijaya — Interactive Portfolio Dashboard
 
-## Getting Started
+A modern, interactive personal portfolio website built with **Next.js 16**, **React 19**, **Tailwind CSS**, and **React Three Fiber (3D)**.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Three.js](https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
+[![Deployed on RuPa Cloud](https://img.shields.io/badge/Hosted_on-RuPa_Cloud-blue?style=for-the-badge)](https://rupacloud.web.id/)
 
+---
+
+## 🚀 Overview
+
+Personal portfolio dashboard of **Indra Wijaya** — Computer Engineering Technology student at **Politeknik Negeri Semarang**. Featuring an immersive interactive 3D globe and dynamic galaxy starfield, showcasing technopreneurship initiatives (RuPa Cloud) and spatial data engineering projects.
+
+🌐 **Live URL:** [https://indrawijaya.my.id](https://indrawijaya.my.id)
+
+---
+
+## ✨ Features
+
+- **🌐 Interactive 3D Canvas:** Immersive 3D globe and dynamic particle starfield built using Three.js & React Three Fiber.
+- **⚡ Modern & Fast:** Powered by Next.js App Router and React 19 for optimal performance and SEO.
+- **🎨 Sleek Dark Aesthetic:** Polished dark-mode UI with fluid animations powered by Framer Motion and Tailwind CSS.
+- **📱 Fully Responsive:** Smoothly adapts across mobile, tablet, and desktop viewports.
+- **💼 Project & Initiative Showcase:** Highlights real-world works including **RuPa Cloud** and **Spatial Data Mining**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **3D Graphics:** [Three.js](https://threejs.org/) & [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/) / [@react-three/drei](https://github.com/pmndrs/drei)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Deployment Platform:** [RuPa Cloud](https://rupacloud.web.id/)
+
+---
+
+## 💻 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/IndraWijaya2/portofolio.git
+cd portofolio
 ```
 
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run development server
+```bash
+npm run dev
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for production
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📬 Contact & Socials
 
-To learn more about Next.js, take a look at the following resources:
+- **Domain:** [https://indrawijaya.my.id](https://indrawijaya.my.id)
+- **LinkedIn:** [Indra Wijaya](https://www.linkedin.com/in/indrawijaya1818/)
+- **GitHub:** [@IndraWijaya2](https://github.com/IndraWijaya2)
+- **Instagram:** [@indraa.wjya](https://www.instagram.com/indraa.wjya)
+- **Email:** [indrawijaya180218@gmail.com](mailto:indrawijaya180218@gmail.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2026 Indra Wijaya. All rights reserved.
